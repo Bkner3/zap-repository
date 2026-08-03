@@ -1,0 +1,16 @@
+{
+    "repo": "Official ZAP Repository",
+    "base_url": "https://bkner3.github.io/zap-repository/",
+    "updated": "2026-08-03",
+    "packages": [
+        {
+            "name": "hello",
+            "version": "1.0.0",
+            "description": "Example package",
+            "url": "packages/hello.zip",
+            "system": "Windows",
+            "exec_file": "hello.exe",
+            "hash": "3ce0b2d5fdd9444cfffeb93dc66954eeab934e96c9267afc4a190f7b21e2344e"
+        }
+    ]
+}
