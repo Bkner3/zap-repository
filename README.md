@@ -1,5 +1,3 @@
-ZAP Official Repository
-
 This repository contains the official packages for the ZAP package manager.
 
 [Official Web Site](https://bkner3.github.io/zap/)
