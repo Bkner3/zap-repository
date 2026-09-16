@@ -1,16 +1,53 @@
 {
-    "repo": "Official ZAP Repository",
-    "base_url": "https://bkner3.github.io/zap-repository/",
-    "updated": "2026-08-03",
-    "packages": [
-        {
-            "name": "hello",
-            "version": "1.0.0",
-            "description": "Example package",
-            "url": "packages/hello.zip",
-            "system": "Windows",
-            "exec_file": "hello.exe",
-            "hash": "3ce0b2d5fdd9444cfffeb93dc66954eeab934e96c9267afc4a190f7b21e2344e"
-        }
-    ]
+  "repo": "Official ZAP Repository",
+  "base_url": "https://bkner3.github.io/zap-repository/",
+  "updated": "2026-08-03",
+  "packages": [
+    {
+      "name": "hello",
+      "version": "1.0.0",
+      "author": "Bernardo",
+      "description": "Package to show zap working",
+      "url": "packages/hello/1.0.0/hello-1.0.0.zip",
+      "system": "Windows",
+      "exec_file": "hello.exe",
+      "hash": "3ce0b2d5fdd9444cfffeb93dc66954eeab934e96c9267afc4a190f7b21e2344e"
+    },
+    {
+      "name": "test-core",
+      "version": "1.0.0",
+      "author": "ZAP Tests",
+      "type": "library",
+      "description": "Core dependency used for ZAP dependency tests.",
+      "url": "packages/test_packages/test-core-1.0.0.zip",
+      "system": "Windows",
+      "exec_file": "test-core.exe",
+      "hash": "2F8B8A5CA32D11383FDE2DC98FC6E67C6F5A5790D76A9462763386BEB87019E9",
+      "dependencies": []
+    },
+    {
+      "name": "test-lib",
+      "version": "1.0.0",
+      "author": "ZAP Tests",
+      "type": "library",
+      "description": "Library depending on test-core.",
+      "url": "packages/test_packages/test-lib-1.0.0.zip",
+      "system": "Windows",
+      "exec_file": "test-lib.exe",
+      "hash": "85F03142E0FF2BAB6FB9E7BEEB261799B7793BC1AA33D1D97CA04C6A33B3A963",
+      "dependencies": ["test-core"]
+    },
+    {
+      "name": "test-app",
+      "version": "1.0.0",
+      "author": "ZAP Tests",
+      "type": "application",
+      "description": "Application depending on test-lib.",
+      "url": "packages/test_packages/test-app-1.0.0.zip",
+      "system": "Windows",
+      "exec_file": "test-app.exe",
+      "hash": "2A9BCEE669D17527DEAF87622436A017F6E9CFE496A4A7024F7F28CAF6D39A10",
+      "dependencies": ["test-lib"]
+    }
+  ]
 }
