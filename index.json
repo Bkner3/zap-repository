@@ -1,6 +1,7 @@
 {
   "repo": "Official ZAP Repository",
-  "base_url": "https://bkner3.github.io/zap-repository/",
+  "base_url_a": "https://bkner3.github.io/zap-repository/",
+  "base_url": "http://192.168.0.22:8000/",
   "updated": "2026-08-03",
   "packages": [
     {
@@ -8,7 +9,7 @@
       "version": "1.0.0",
       "author": "Bernardo",
       "description": "Package to show zap working",
-      "url": "packages/hello/1.0.0/hello-1.0.0.zip",
+      "url": "packages/hello/1.0.0/hello-1.0.0-windows.zip",
       "system": "Windows",
       "exec_file": "hello.exe",
       "hash": "3ce0b2d5fdd9444cfffeb93dc66954eeab934e96c9267afc4a190f7b21e2344e"
@@ -48,6 +49,17 @@
       "exec_file": "test-app.exe",
       "hash": "2A9BCEE669D17527DEAF87622436A017F6E9CFE496A4A7024F7F28CAF6D39A10",
       "dependencies": ["test-lib"]
+    },
+    {
+      "name": "hello",
+      "version": "1.0.0",
+      "author": "Bernardo",
+      "description": "Package to show zap working",
+      "url": "packages/hello/1.0.0/hello-1.0.0-linux.zip",
+      "system": "Linux",
+      "exec_file": "hello",
+      "hash": "8E2E0D87F9C8DACEB3C3E7178AA34E59305DA1D119D021CDBD2FC52930DB1DB6"
     }
+    
   ]
 }
