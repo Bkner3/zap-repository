@@ -1,7 +1,6 @@
 {
   "repo": "Official ZAP Repository",
-  "base_url_a": "https://bkner3.github.io/zap-repository/",
-  "base_url": "http://192.168.0.22:8000/",
+  "base_url": "https://bkner3.github.io/zap-repository/",
   "updated": "2026-08-03",
   "packages": [
     {
